@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CarShair - сервіс каршерінгу автомобілів. Орендуйте авто просто, швидко та вигідно.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../img/original.png">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2d18767a61.js" crossorigin="anonymous"></script>
+    <title>CarShair</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="../img/logo_home.png" alt="CarShair">
+            <div class="head">
+            <div class="head_title"><a href="../about/about.html">Про нас</a></div>
+            <div class="head_title"><a href="">Віртуальна карта</a></div>
+            <div class="head_title"><a href="../booking/index.html">Бронювати</a></div>
+            <div class="head_title"><a href="">Контакти</a></div>
+            <button class="head_title head_account" id="login-btn">Log in</button>
+            <button class="head_title head_account" id="signup-btn"> Sign in</button>
+            <a href="account.html" id="account-link" style="display:none;">
+                <img src="../img/account_icon.png" alt="Account" style="width:32px;height:32px;border-radius:50%;">
+            </a>
+        </div>
+        </div>
+        <div class="content">
+            <div>
+                <p><span>CarShair</span> – твоя свобода руху! <br>
+                Бери авто на прокат просто, <br> 
+                швидко і вигідно.</p>
+            </div>
+            <img src="../img/auto.jpg" alt="">
+        </div>
+        
+    </header>
+    <div class="car_list">
+        <div class="car_list_title">
+            <h1>Наші авто</h1>
+        </div>
+        <div class="carousel-container">
+            <button class="carousel-button prev" onclick="moveCarousel(-1)">❮</button>
+            <div class="car_list_items">
+                <div class="car_list_item">
+                    <img height="150px" src="../img/VW-Touareg.png" alt="VW_Touareg">
+                    <p>Volkswagen Touareg</p>
+                    <div class="car_list_item_info">
+                        <i class="fa-solid fa-user-group" style="color: #878787; padding-left: 5px;"></i>
+                        <p>5 місць</p>
+                    </div>
+                    <div class="car_list_item_info">
+                        <img src="../img/icon-transmition.png" alt="icon-transmition">
+                        <p>Автомат</p>
+                    </div>
+                </div>
+
+                <div class="car_list_item">
+                    <img class="car_list_item_img" src="../img/sedan_car2.png" alt="sedan">
+                    <p>Toyota Corolla</p>
+                    <div class="car_list_item_info">
+                        <i class="fa-solid fa-user-group" style="color: #878787; padding-left: 5px;"></i>
+                        <p>5 місць</p>
+                    </div>
+                    <div class="car_list_item_info">
+                        <img src="../img/icon-transmition.png" alt="icon-transmition">
+                        <p>Механічна</p>
+                    </div>
+                </div>
+
+                <div class="car_list_item">
+                    <img class="car_list_item_img" src="../img/audi_car3.png" alt="audi">
+                    <p>Audi A6</p>
+                    <div class="car_list_item_info">
+                        <i class="fa-solid fa-user-group" style="color: #878787; padding-left: 5px;"></i>
+                        <p>5 місць</p>
+                    </div>
+                    <div class="car_list_item_info">
+                        <img src="../img/icon-transmition.png" alt="icon-transmition">
+                        <p>Автомат</p>
+                    </div>
+                </div>
+
+                <div class="car_list_item">
+                    <img height="150px" src="../img/scoda_car4.webp" alt="scoda">
+                    <p>Scoda Fabia</p>
+                    <div class="car_list_item_info">
+                        <i class="fa-solid fa-user-group" style="color: #878787; padding-left: 5px;"></i>
+                        <p>5 місць</p>
+                    </div>
+                    <div class="car_list_item_info">
+                        <img src="../img/icon-transmition.png" alt="icon-transmition">
+                        <p>Механічна</p>
+                    </div>
+                </div>
+
+                <div class="car_list_item">
+                    <img height="150px" src="../img/toyota_car5.png" alt="toyota">
+                    <p>Toyota RAV4</p>
+                    <div class="car_list_item_info">
+                        <i class="fa-solid fa-user-group" style="color: #878787; padding-left: 5px;"></i>
+                        <p>5 місць</p>
+                    </div>
+                    <div class="car_list_item_info">
+                        <img src="../img/icon-transmition.png" alt="icon-transmition">
+                        <p>Варіатор</p>
+                    </div>
+                </div>
+
+                <div class="car_list_item">
+                    <img height="150px" src="../img/mazda_car6.png" alt="mazda">
+                    <p>Mazda CX-30</p>
+                    <div class="car_list_item_info">
+                        <i class="fa-solid fa-user-group" style="color: #878787; padding-left: 5px;"></i>
+                        <p>5 місць</p>
+                    </div>
+                    <div class="car_list_item_info">
+                        <img src="../img/icon-transmition.png" alt="icon-transmition">
+                        <p>Автомат</p>
+                    </div>
+                </div>
+
+                <div class="car_list_item">
+                    <img height="180px" src="../img/kia_car7.png" alt="kia">
+                    <p>Kia Sportage</p>
+                    <div class="car_list_item_info">
+                        <i class="fa-solid fa-user-group" style="color: #878787; padding-left: 5px;"></i>
+                        <p>5 місць</p>
+                    </div>
+                    <div class="car_list_item_info">
+                        <img src="../img/icon-transmition.png" alt="icon-transmition">
+                        <p>Автомат</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-button next" onclick="moveCarousel(1)">❯</button>
+        </div>
+    </div>
+
+    <div class="mobile_work">
+        <img class="slider_img" src="../img/img_slider.png" alt="">
+        <div class="child_mobile">
+            <p class="slider_title" style="font-weight: 300; font-size: 40px;">Як працює CarShair</p>
+            <div style="display: flex; margin-top: 40px; text-align: unset;">
+                <i class="fa-regular fa-circle-dot fa-xl" style="color: #000000; width: 22px; height: 22px; margin-right: 13px; margin-top: 67px;" ></i>
+                <div class="progress-bar">
+                    <div class="progress"></div>
+                </div>
+                <img style="width: 70px; height: 60px" src="../img/how.png">
+            </div>
+            <p class="slider_text">Знайдіть автомобіль поруч із вами — доступний 24/7.</p>
+            <div class="arrow_mobile">
+                <button class="arr_left" onclick="prevSlide()">&#10094;</button>
+                <button class="arr_right" onclick="nextSlide()">&#10095;</button>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="why_we">
+        <h2>Чому ми?</h2>
+        <div class="why_grid">
+            <div class="why_content">
+                <p style="font-weight: 700;">Необмежений пробіг</p>
+                <i class="fa-solid fa-infinity" style="color: #d5953b;"></i>
+                <p>Відсутність обмежень пробігу при оренді автомобіля в нашій компанії.</p>
+            </div>
+            <div class="why_content">
+                <p style="font-weight: 700;">Передоплата 15%</p>
+                <i class="fa-solid fa-percent" style="color: #d5953b;"></i>
+                <p>Щоб забронювати автомобіль, достатньо внести передоплату в розмірі 15%.</p>
+            </div>
+            <div class="why_content">
+                <p style="font-weight: 700;">Безкоштовна підтримка</p>
+                <i class="fa-solid fa-handshake" style="color: #d5953b;"></i>
+                <p>Ми надаємо підтримку в оренді автомобілів для всіх ваших потреб.</p>
+            </div>
+            <div class="why_content">
+                <p style="font-weight: 700;">Технічне обслуговування</p>
+                <i class="fa-solid fa-screwdriver-wrench" style="color: #d5953b;"></i>
+                <p>Наші професіонали виконають усе технічне обслуговування.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div><img src="../img/logo_home.png" alt=""></div>
+        <div class="footer_content">
+            <div class="about foot_item">
+                <h4>Про сервіс</h4>
+                <a href="../about/about.html"><p>Про компанію</p></a>
+                <a href=""><p>Блог</p></a>
+                <a href=""><p>Про автопарк</p></a>
+            </div>
+            <div class="contacts foot_item">
+                <h4>Контакти</h4>
+                <a href=""><p>+380662455839</p></a>
+                <a href=""><p>info@carshair.com</p></a>
+                <a href="https://t.me/+bxJszUQIK0VlODVi" target="_blank"><p>Telegram</p></a>
+            </div>
+            <div class="asks foot_item" >
+                <h4>Часті запитання</h4>
+                <p>Як орендувати автомобіль?</p>
+                <p>Як заправити автомобіль?</p>
+                <p>Що робити у разі аварії?</p>
+            </div>
+            
+        </div>
+    </footer>
+    <div style="background-color: #DDD3BE; text-align: center;">
+        <div style="display: flex; justify-content: center; margin-left: 60px;">
+            <hr style="border: 1px solid #76664F; width: 900px;">
+        </div>
+        <p style="padding-top: 24px; padding-bottom: 24px;">©CarShair 2024 - 2025. Всі права захищено.</p>
+    </div>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Вхід в акаунт</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="loginPassword" placeholder="Пароль" required>
+                </div>
+                <button type="submit" class="submit-btn">Увійти</button>
+            </form>
+            <p class="switch-form">Немає акаунту? <a href="#" id="switchToSignup">Зареєструватися</a></p>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Реєстрація</h2>
+            <form id="signupForm">
+                <div class="form-group">
+                    <input type="text" id="signupName" placeholder="Ім'я" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="signupEmail" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="signupPassword" placeholder="Пароль" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="signupConfirmPassword" placeholder="Підтвердіть пароль" required>
+                </div>
+                <button type="submit" class="submit-btn">Зареєструватися</button>
+            </form>
+            <p class="switch-form">Вже є акаунт? <a href="#" id="switchToLogin">Увійти</a></p>
+        </div>
+    </div>
+
+    <script src="home.js"></script>
+</body>
+</html>

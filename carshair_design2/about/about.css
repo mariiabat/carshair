@@ -1,0 +1,196 @@
+/*header*/
+.navbar {
+    height: 70px;
+    display: flex;
+    width: 100%;
+    background-color: #DDD3BE;
+}
+
+.navbar>img{
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.head{
+    display: flex;
+    margin: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Mono", monospace;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.head_title {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.head_title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #D5953B;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    border-radius: 2px;
+}
+
+.head_title:hover::after {
+    transform: scaleX(1);
+}
+
+.head_account{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#signup-btn{
+    margin-left: 10px;
+    border: 1px solid #D5953B;
+    border-radius: 10px;
+}
+
+#login-btn{
+    margin-left: auto;
+}
+
+
+/*main content*/
+.about_img>img{
+    width: 250px;
+}
+
+.main_flex{
+    display: flex;
+}
+
+.about_text{
+    width: 700px;
+    margin-left: 160px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.main_about>h1{
+    margin: 20px;
+    text-align: center;
+}
+
+/*footer*/
+
+footer>div>img{
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer{
+    background-color: #DDD3BE;
+    display: flex;
+    padding-bottom: 27px;
+}
+
+.footer_content{
+    display: flex;
+    
+}
+
+.footer_content p{
+    margin-top: 15px;
+    color: #3C3C3C;
+}
+
+.foot_item{
+    margin: 20px;
+    margin-left: 200px;
+}
+
+.principles{
+    height: 220px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.principles_item{
+    text-align: center;
+    width: 350px;
+    margin: 10px;
+}
+
+.principles_item h3{
+    margin:20px;
+}
+/*princeples_numbers*/
+.sq.b {
+    color: #fff;
+}
+
+.sq {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    -webkit-box-flex: 0;
+    flex: 0 0 25px;
+    margin: 0 auto;
+    letter-spacing: 0;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+.sq.b::before {
+    background: #2d2929;
+}
+
+.sq::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    z-index: -1;
+}

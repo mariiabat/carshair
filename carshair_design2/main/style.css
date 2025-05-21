@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Mono", monospace;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.head{
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+  
+.navbar {
+    height: 70px;
+    display: flex;
+    
+}
+
+.navbar>img{
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.head_title {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    margin: 0 10px;
+}
+
+.head_title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background: #D5953B;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+    border-radius: 2px;
+}
+
+.head_title:hover::after {
+    transform: scaleX(1);
+}
+
+header{
+    height: 740px;
+    width: 100%;
+    background-color: #DDD3BE;
+}
+
+.content{
+    display: flex;
+}
+
+.content>img{
+    height: 792px;
+    position: absolute;
+    top: 60px;
+    right: 120px; 
+    object-fit: cover;
+    z-index: 1;
+}
+
+.content>div>p{
+    padding-top: 170px;
+    padding-bottom: 250px;
+    padding-left: 180px;
+    font-size: 40px;
+}
+
+.content>div>p>span{
+    color: #D5953B;
+}
+
+.head_account{
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#signup-btn{
+    margin-left: 10px;
+    border: 1px solid #D5953B;
+    border-radius: 10px;
+}
+
+#login-btn{
+    margin-left: auto;
+}
+
+.car_list_item_info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}   
+
+.car_list_title{
+    text-align: center;
+}
+
+.car_list_item_info>img{
+    width: 30px;
+    height: 30px;
+}
+
+.car_list_item{
+    text-align: center;
+}
+
+.car_list_item_img{
+    width: 300px;
+    height: 200px;
+}
+
+.car_list_items{
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out;
+    overflow: visible;
+    width: 100%;
+    padding: 20px 0;
+    height: 300px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    padding: 0 40px;
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #D5953B;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 2;
+    opacity: 1;
+}
+
+.carousel-button:hover {
+    background: #b37a2f;
+}
+
+.carousel-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.carousel-button.prev {
+    left: 0;
+}
+
+.carousel-button.next {
+    right: 0;
+}
+
+.car_list_item {
+    flex: 0 0 calc(33.333% - 14px);
+    min-width: 300px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    margin-right: 20px;
+}
+
+.car_list {
+    padding: 20px 0;
+    overflow: visible;
+    width: 100%;
+}
+
+.mobile_work {
+    font-family: "PT Mono", monospace;
+    margin-top: 84px;
+    display: flex;
+    background-color: #DDD3BE;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+  
+.child_mobile {
+    margin-top: 77px;
+    margin-left: 77px;
+}
+  
+.arrow_mobile {
+  margin-top: 30px;
+}
+  
+.arr_left {
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-color: #d5953b00;
+  padding: 0;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  color:  #000000;
+  margin-right: 83px;
+}
+
+.arr_right {
+  border-radius: 50%;
+  border: 1px solid #000000;
+  background-color: #d5953b00;
+  padding: 0;
+  width: 66px;
+  height: 66px;
+  cursor: pointer;
+  color:  #000000;
+}
+
+.slider_title{
+  margin-top: 67px;
+}
+
+.slider_img{
+    width: 400px;
+    height: 450px;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0; 
+  }
+  to {
+      opacity: 1; 
+  }
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #ddd;
+    position: relative;
+    margin-right: 13px;
+    margin-top: 67px;
+}
+
+.progress {
+    height: 100%;
+    background-color: black;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.why_content{
+    width: 310px;
+    text-align: center;
+    margin: 20px;
+}
+
+.why_we>h2{
+    text-align: center;
+    margin: 20px;
+}
+
+.why_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px 80px; /* вертикальний і горизонтальний відступи */
+    justify-content: center;
+    align-items: start;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+footer>div>img{
+    height: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer{
+    background-color: #DDD3BE;
+    display: flex;
+    padding-bottom: 27px;
+    justify-content: center;
+}
+
+.footer_content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 100px;
+}
+
+.footer_content p{
+    margin-top: 15px;
+    color: #3C3C3C;
+}
+
+.foot_item{
+    margin: 20px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #D5953B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #b37a2f;
+}
+
+.switch-form {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.switch-form a {
+    color: #D5953B;
+    text-decoration: none;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
